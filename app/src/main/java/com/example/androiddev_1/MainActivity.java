@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         buttonOk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                 intent.putExtra("question", editText.getText().toString());
                 startActivityForResult(intent, REQUEST_CODE);
             }
